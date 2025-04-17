@@ -8,7 +8,8 @@ import datetime
 # Load the trained model
 def load_model():
     # Use full absolute path to the .pbz2 file
-    with bz2.BZ2File(bikeriderequest.pbz2", 'rb') as f:
+    with bz2.BZ2File("bikeriderequest.pbz2", 'rb') as f:
+
         model = pickle.load(f)
     return model
 
